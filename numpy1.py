@@ -101,3 +101,38 @@ print(arr[:,2])
 #OUTPUT = [ 3  7 11 15 19]
 print(arr[1:3 , 2])
 #output= [ 7 11]
+
+# numpy math
+
+ar = np.arange(1,11).reshape(2,5)
+br = np.arange(21,31).reshape(2,5)
+
+print(ar)
+print(br)
+
+# numpy array sum
+print(np.add(ar,br))
+
+#numpy array subtract
+print(np.subtract(ar,br))
+
+#numpy array multiply (only elements in consecutive places)
+print(np.multiply(ar,br))
+
+#numpy array division (only elements in consecutive places)
+print(np.divide(ar,br))
+
+#numpy matrix multiplication
+
+# 1. first check ar[col]=br[row]. if not, reshape br.
+br = br.reshape(5,2)
+mul = np.dot(ar,br)
+print(mul)
+
+#some othe functions
+print(mul.max())
+print(mul.min())
+print(mul.argmax())
+print(mul.argmin())
+print(np.sum(mul, axis=1))
+print(np.sum(mul, axis=0))
