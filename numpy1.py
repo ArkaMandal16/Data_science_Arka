@@ -1,5 +1,5 @@
 import numpy as np
-
+import matplotlib.pyplot as plt
 #Declaration of numpy arrays
 
 a = np.array([1,2,3])
@@ -136,3 +136,58 @@ print(mul.argmax())
 print(mul.argmin())
 print(np.sum(mul, axis=1))
 print(np.sum(mul, axis=0))
+
+#numpy trig functions
+
+print(np.pi)
+print(np.sin(np.pi/6))
+
+x_sin = np.arange(0,10*np.pi,0.1)
+y_sin = np.sin(x_sin)
+
+plt.plot(x_sin,y_sin)
+plt.show()
+
+x_cos = np.arange(0,10*np.pi,0.1)
+y_cos = np.cos(x_cos)
+
+plt.plot(x_cos,y_cos)
+plt.show()
+
+plt.subplot(2,1,1)
+plt.plot(x_sin,y_sin)
+plt.title("sin curve")
+
+plt.subplot(2,1,2)
+plt.plot(x_cos,y_cos)
+plt.title("cos curve")
+
+plt.show()
+
+# random function 
+
+r = np.random.random(5)
+print(r)
+
+d = np.random.random((2,2))
+print(d)
+
+sex = np.random.random((3,2,2))
+print(sex)
+
+ohh = np.arange(1,10)
+print(np.random.choice(ohh))
+
+#string operations 
+
+s1 = "hi ishika"
+s2 = "i love you"
+
+print(np.char.add(s1 ,s2))
+print(np.char.upper(s1))
+print(np.char.lower(s1))
+
+print(np.char.split(s1))
+print(np.char.splitlines(s2))
+print(np.char.replace(s1, 'hi', 'hello'))
+print(np.char.center('hi', 6, '*'))
