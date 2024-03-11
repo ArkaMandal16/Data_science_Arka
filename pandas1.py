@@ -2,7 +2,7 @@ from operator import index
 from os import name
 import pandas as pd
 import numpy as np
-import csv 
+
 #pd.__version__
 
 #pandas series
@@ -42,4 +42,8 @@ print(df2)
 
 df_csv = pd.read_csv()
 print(df_csv)
+
+print(df_csv.columns)
+print(df_csv.shape)
+
 
