@@ -94,3 +94,5 @@ print(df_csv1.fillna(method='ffill'))
 #ffill: forward fill: just copies the following non-null value and puts it in the null place
 
 print(df_csv1.fillna(method='bfill'))
+
+df_csv1
