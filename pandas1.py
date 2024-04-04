@@ -52,6 +52,7 @@ print(df_csv.tail)
 print(df_csv.describe())
 print(df_csv.info())
 
+
 #describe function only gives numeric columns as output
 
 df_csv1 = pd.read_csv(r"C:\Users\91743\Desktop\IT_DATA BASE.csv")
@@ -95,4 +96,3 @@ print(df_csv1.fillna(method='ffill'))
 
 print(df_csv1.fillna(method='bfill'))
 
-df_csv1
